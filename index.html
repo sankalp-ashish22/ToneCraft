@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+<!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="bg-gray border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="./winking.png" class="h-8" alt="Flowbite Logo" />
+                <span class="italic self-center text-2xl font-semibold whitespace-nowrap text-white">ToneCraft</span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                    aria-expanded="false"
+                    class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <span class="sr-only">Search</span>
+                </button>
+                <div class="relative hidden md:block w-96">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                        <span class="sr-only">Search icon</span>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="What's your jam right now?">
+                      
+                </div>
+                <button data-collapse-toggle="navbar-search" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-search" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                <div class="relative mt-3 md:hidden">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="What's your jam right now?">
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- name bar -->
+    <div class="mycontainer neon owner">
+        <h1> Owned & operated by Sankalp Ashish </h1>
+        <span class="image-containers2 ">
+            <img src="./icons8-instagram-240.png"> <img src="./icons8-linkedin-480.png"><img src="./downloading.png">
+        </span>
+    </div>
+    <!-- Card -->
+    <div class=" centering">
+        <div
+            class="mycontainer main_card max-w-sm  bg-black border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div id="card-image">
+            <!-- <a href="#"> -->
+                <img id="card-img2"class="rounded-t-lg" src="./maxresdefault.jpg" alt="" />
+            <!-- </a> -->
+            </div>
+            <div class="p-5 writtencard" id="about_song">
+                <!-- <a href="#"> -->
+                    <h5
+                        class="neon font-serif italic font-light mb-2 text-4xl tracking-tight text-white-900 dark:text-white">
+                        Attention</h5>
+                <!-- </a> -->
+                <p class="neon mb-3 font-normal text-white-700 text-white-400">"Transforming melodies into moments where every ring becomes a personal anthem. Craft your sound, make memories ring."</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- musicplayer -->
+    <div class="music-player">
+
+        <div class="progress-controller">
+            <div class="control-buttons">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="play-pause fas fa-play"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-undo-alt"></i>
+            </div>
+            <div class="progress-container">
+                <span>0:49</span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span>3:15</span>
+            </div>
+        </div>
+       
+    </div>
+    <script>
+   
+
+let audio = new Audio();
+
+async function searchMusic() {
+    const searchTerm = document.getElementById("search-navbar").value.trim();
+
+    if (searchTerm !== "") {
+        const apiUrl = `https://deezerdevs-deezer.p.rapidapi.com/search?q=${searchTerm}`;
+
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': '7b13e573femshb5ec8d06bf7fd94p161657jsn4a65d1bec6e0',
+                'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
+            }
+        };
+
+        try {
+            const response = await fetch(apiUrl, options);
+            const result = await response.json();
+            console.log(result);
+        //     const wikiResponse = await fetch(`http://localhost:3000/get_wikipedia_data/${searchTerm}`);
+        //   const wikiData = await wikiResponse.json();
+        //   console.log(wikiData);
+
+            if (result.data.length > 0) {
+                playMusic(result.data[0].preview);
+                setImage(result);
+                setContent(result);
+           
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    }
+}
+// ...
+
+const backgroundElement = document.querySelector('.centering');
+const backgroundElement_card = document.getElementById('card-img2');
+function setImage(result) {
+    // Check if the 'data' array exists and has at least one item
+    if (result.data && result.data.length > 0) {
+        const album = result.data[0].album;
+
+        // Check if the 'album' object exists
+        if (album) {
+            const albumCoverURL = album.cover_medium;
+
+            // Set the background image of the element to the extracted URL
+          // backgroundElement_card.setAttribute('style', `background-image: url('${albumCoverURL}')`);
+
+            backgroundElement_card.classList.add('card-image');
+            backgroundElement_card.src = albumCoverURL;
+        }
+    }
+}
+
+// ...
+const amend_html = document.getElementById("about_song"); 
+function setContent(result){
+    amend_html.innerHTML =   `<h5
+                        class="neon font-serif italic font-light mb-2 text-4xl tracking-tight text-white-900 dark:text-white">
+                        ${result.data[0].album.title}</h5>   <p class="neon mb-3 font-normal text-white-700 text-white-400">"Transforming melodies into moments where every ring becomes a personal anthem. Craft your sound, make memories ring."</p>`
+  
+    
+}
+
+
+function playMusic(previewUrl) {
+    // Pause the audio if it's already playing
+    audio.pause();
+    
+    // Set the new source and play the audio
+    audio.src = previewUrl;
+    audio.play();
+
+    // Add event listener to log when audio ends
+    audio.addEventListener("ended", function () {
+        console.log("Audio ended");
+    });
+}
+
+// Add event listener to call searchMusic when Enter key is pressed
+document.body.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        console.log("Enter pressed");
+        searchMusic();
+    }
+});
+
+
+
+//
+
+
+  
+
+
+
+</script>
+    
+  
+
+    <!-- <script src="./app.js"></script> -->
+
+</body>
+
+</html>
+

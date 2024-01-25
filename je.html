@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Search</title>
+</head>
+<body>
+    <!-- Input field for the user to enter a search query -->
+    <input type="text" id="searchInput" placeholder="Enter search query">
+    
+    <!-- Button to initiate the YouTube video search -->
+    <button onclick="searchYouTube()">Search</button>
+
+    <!-- Container where the YouTube player will be embedded -->
+    <div id="playerContainer"></div>
+
+    <!-- JavaScript code -->
+    <script>
+        // Function to search YouTube based on the user's query
+        async function searchYouTube() {
+            // Get the search query from the input field
+            const query = document.getElementById('searchInput').value;
+            
+            // Replace 'YOUR_YOUTUBE_API_KEY' with your actual YouTube Data API key
+            const apiKey = 'AIzaSyDAUsIl5OGPVUqrW1cTSs3FM_c0qujGukY';
+
+            // Construct the YouTube API URL for video search
+            const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${query}&key=${apiKey}`;
+
+            try {
+                // Fetch data from the YouTube API
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+
+                // If there are search results, get the video ID of the first result
+                if (data.items.length > 0) {
+                    const videoId = data.items[0].id.videoId;
+                    
+                    // Load the YouTube player with the selected video
+                    loadYouTubePlayer(videoId);
+                } else {
+                    console.log('No search results found.');
+                }
+            } catch (error) {
+                // Log an error message if there's an issue fetching data from the API
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        // Function to load the YouTube player with a specified video ID
+        function loadYouTubePlayer(videoId) {
+            // Get the container where the YouTube player will be embedded
+            const playerContainer = document.getElementById('playerContainer');
+
+            // Create an iframe element for the YouTube player
+            const iframe = document.createElement('iframe');
+            
+            // Set attributes for the iframe
+            iframe.id = 'ytplayer';
+            iframe.type = 'text/html';
+            iframe.width = '640';
+            iframe.height = '360';
+
+            // Set the source URL for the iframe, including the selected video ID
+            iframe.src = `https://www.youtube.com/embed/${videoId}?origin=${window.location.origin}&enablejsapi=1`;
+            
+            // Set additional attributes for the iframe
+            iframe.frameBorder = '0';
+            iframe.allowFullscreen = true;
+
+            // Clear the contents of the player container and append the iframe
+            playerContainer.innerHTML = '';
+            playerContainer.appendChild(iframe);
+
+            // Log messages for debugging 
+            console.log('YouTube iframe URL:', iframe.src);
+            console.log('Player container:', playerContainer);
+        }
+    </script>
+</body>
+</html>
+
+<!-- AIzaSyDAUsIl5OGPVUqrW1cTSs3FM_c0qujGukY -->
+

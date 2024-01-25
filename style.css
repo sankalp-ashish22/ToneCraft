@@ -1,0 +1,263 @@
+body {
+    background-image: url('./bg2.jpg');
+    background-size: cover;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+}
+
+#search-navbar {
+    background-color: rgba(100, 97, 97, 0.215);
+    color: aliceblue;
+}
+
+#navbar-search input::placeholder {
+    font-style: italic;
+}
+
+.centering {
+    margin-top: 1%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 65%;
+   
+
+
+}
+
+.card-image {
+    background-size: cover;
+}
+#card-img2{
+    max-width: 100%;
+    max-height: 200px;
+    width:100%;
+    object-fit: cover;
+    /* object-position: center; */
+}
+
+.centering::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("./aa.jpg");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    z-index: -1;
+    /* Move the pseudo-element below the content */
+}
+
+/* .centering.altered::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    z-index: -1;
+} */
+.main_card {
+    opacity: 1;
+    /* background-image: url("./giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    /* Other styles for the .main_card div */
+}
+
+.writtencard {
+    background-image: url("./giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mycontainer {
+    background-color: rgba(54, 53, 70, 0.166);
+    backdrop-filter: blur(30px);
+}
+
+
+
+.music-player {
+    --primary-color: #ddd;
+    --secondary-color: #999;
+    --green-color: #2d5;
+    --padding: 1em;
+    /* background-color: #c41a1a; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    height: 6rem;
+    padding: var(--padding);
+    color: var(--primary-color);
+}
+
+i {
+    color: var(--secondary-color);
+}
+
+i:hover {
+    color: var(--primary-color);
+}
+
+.song-bar {
+    position: absolute;
+    left: var(--padding);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    width: 25%;
+}
+
+
+.image-container {
+    --size: 4.5em;
+    flex-shrink: 0;
+    width: var(--size);
+    height: var(--size);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.icons {
+    display: flex;
+    gap: 1em;
+}
+
+.progress-controller {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    color: var(--secondary-color);
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.play-pause {
+    display: inline-block;
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: #111;
+    border-radius: 50%;
+}
+
+.play-pause:hover {
+    transform: scale(1.1);
+    color: #111;
+}
+
+.progress-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.progress-bar {
+    height: 4px;
+    border-radius: 10px;
+    width: 30%;
+    background-color: #ccc4;
+}
+
+.progress {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+.progress-bar:hover .progress {
+    background-color: var(--green-color);
+}
+
+.progress-bar:hover .progress::after {
+    content: "";
+    position: absolute;
+    --size: 1em;
+    width: var(--size);
+    height: var(--size);
+    right: 0;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    transform: translate(50%, calc(2px - 50%));
+}
+
+
+
+
+.neon {
+    color: #fff;
+    text-shadow:
+        0 0 5px #000000,
+        0 0 10px #000000,
+        0 0 20px #000000,
+        0 0 40px rgb(84, 6, 126),
+        0 0 80px rgb(84, 6, 126),
+        0 0 90px rgb(84, 6, 126),
+        0 0 100px rgb(84, 6, 126),
+        0 0 100px rgb(84, 6, 126),
+        0 0 100px rgb(84, 6, 126),
+        0 0 150px rgb(84, 6, 126);
+}
+
+.owner {
+    padding: 0.5%;
+    text-align: center;
+    /* Center the content horizontally */
+    align-items: center;
+    justify-content: center;
+}
+
+.image-containers2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    /* Add some space between h1 and the image container */
+    /* transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1.2); */
+}
+
+
+/* Style for the images */
+.image-containers2 img {
+    height: 25px;
+    margin-left: 10px;
+
+}
+
+/* .image-containers2 img:hover {
+    transform: scale(1.2); /* Increase the size on hover */
